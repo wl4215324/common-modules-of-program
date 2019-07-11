@@ -1,0 +1,42 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BYTE	producer_consumer_shmfifo.h	33;"	d
+MAX_BUFFER_SIZE	producer_consumer_shmfifo.h	22;"	d
+MUTEX_INDEX	producer_consumer_shmfifo.h	30;"	d
+PRODUCER_CONSUMER_QUEUE_H_	producer_consumer_shmfifo.h	9;"	d
+SEM_EMPTY_INDEX	producer_consumer_shmfifo.h	29;"	d
+SEM_FULL_INDEX	producer_consumer_shmfifo.h	28;"	d
+SEM_MODE	producer_consumer_shmfifo.h	25;"	d
+SEM_NUM	producer_consumer_shmfifo.h	27;"	d
+SHM_MAX_SIZE	producer_consumer_shmfifo.h	24;"	d
+SHM_MODE	producer_consumer_shmfifo.h	23;"	d
+ShmSegment	producer_consumer_shmfifo.h	/^} ShmSegment;$/;"	t	typeref:struct:__anon1
+array	producer_consumer_shmfifo.h	/^	ushort * array ; \/* for GETALL and SETALL *\/$/;"	m	union:semun
+buf	producer_consumer_shmfifo.h	/^	struct semid_ds * buf ; \/* for IPC_STAT and IPC_SET *\/$/;"	m	union:semun	typeref:struct:semun::semid_ds
+in	producer_consumer_shmfifo.h	/^	unsigned int in;$/;"	m	struct:__anon1
+is_power_of_2	producer_consumer_shmfifo.h	/^static inline bool is_power_of_2(unsigned long n)$/;"	f
+main	test_app.c	/^int main(int argc, char **argv)$/;"	f
+max	producer_consumer_shmfifo.h	44;"	d
+min	producer_consumer_shmfifo.h	37;"	d
+out	producer_consumer_shmfifo.h	/^	unsigned int out;$/;"	m	struct:__anon1
+roundup_pow_of_two	producer_consumer_shmfifo.h	/^static inline unsigned long roundup_pow_of_two(unsigned long x)$/;"	f
+sem_id	producer_consumer_shmfifo.h	/^	int sem_id;$/;"	m	struct:__anon2
+semun	producer_consumer_shmfifo.h	/^union semun {$/;"	u
+shm_data	producer_consumer_shmfifo.h	/^	void *shm_data;$/;"	m	struct:__anon2
+shm_id	producer_consumer_shmfifo.h	/^	int shm_id;$/;"	m	struct:__anon2
+shm_segment	producer_consumer_shmfifo.h	/^	ShmSegment *shm_segment;$/;"	m	struct:__anon2
+shmfifo	producer_consumer_shmfifo.h	/^} shmfifo;$/;"	t	typeref:struct:__anon2
+shmfifo_destory	producer_consumer_shmfifo.c	/^void shmfifo_destory(shmfifo *p_shmfifo)$/;"	f
+shmfifo_get	producer_consumer_shmfifo.c	/^unsigned int shmfifo_get(shmfifo *p_shmfifo, BYTE *rd_buffer, unsigned int len)$/;"	f
+shmfifo_init	producer_consumer_shmfifo.c	/^shmfifo *shmfifo_init(key_t key, unsigned int shm_size)$/;"	f
+shmfifo_len	producer_consumer_shmfifo.c	/^unsigned int shmfifo_len(shmfifo *p_shmfifo)$/;"	f
+shmfifo_put	producer_consumer_shmfifo.c	/^unsigned int shmfifo_put(shmfifo *p_shmfifo, const BYTE *wr_buffer, unsigned int len)$/;"	f
+shmfifo_reset	producer_consumer_shmfifo.c	/^void shmfifo_reset(shmfifo *p_shmfifo)$/;"	f
+sigSem	producer_consumer_shmfifo.c	/^void sigSem(int sem_id, int sem_num)$/;"	f
+size	producer_consumer_shmfifo.h	/^	unsigned int size;$/;"	m	struct:__anon1
+val	producer_consumer_shmfifo.h	/^	int val ; \/* for SETVAL *\/$/;"	m	union:semun
+waitSem	producer_consumer_shmfifo.c	/^void waitSem(int sem_id, int sem_num)$/;"	f
